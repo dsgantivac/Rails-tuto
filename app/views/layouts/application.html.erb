@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style media="screen">
+
+    .menu_btn{
+      margin: 18px;
+      width: 120px;
+    }
+
+  </style>
+  <body>
+    <div class="w3-row">
+      <div class="w3-quarter w3-green">
+        <a href="#" class="w3-button w3-black  menu_btn"> menu</a>
+      </div>
+      <div class="w3-quarter w3-red">
+        <h1 class="w3-center ">Estoe es el layout</h1>
+      </div>
+      <div class="w3-quarter w3-orange">
+        <h1 class="w3-center ">Estoe es otro layout</h1>
+      </div>
+      <div class="w3-quarter w3-blue">
+        <h1 class="w3-center ">Juegos</h1>
+      </div>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>
