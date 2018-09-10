@@ -1,0 +1,9 @@
+
+<h1>Articulos de monda</h1>
+
+<% @articles.each do |article|  %>
+
+  <h3><%= link_to article.title,article %></h3>
+  <p> <%= article.body  %> - <%= link_to "Eliminar",article, method: :delete  %></p>
+
+<%end %>

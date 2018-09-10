@@ -12,24 +12,31 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style media="screen">
 
-    .menu_btn{
-      margin: 18px;
-      width: 120px;
+    .container{
+
+      padding-top: 18px;
+      padding-bottom: 18px;
     }
 
   </style>
   <body>
     <div class="w3-row">
-      <div class="w3-quarter w3-green">
-        <a href="#" class="w3-button w3-black  menu_btn"> menu</a>
+      <div class="w3-quarter w3-green container">
+        <div class="w3-center">
+          <%= link_to "home button", "/welcome/index" %>
+        </div>
       </div>
-      <div class="w3-quarter w3-red">
-        <h1 class="w3-center ">Estoe es el layout</h1>
+      <div class="w3-quarter w3-red container">
+        <div class="w3-center">
+          <%= link_to "articles", "/articles" %>
+        </div>
       </div>
-      <div class="w3-quarter w3-orange">
-        <h1 class="w3-center ">Estoe es otro layout</h1>
+      <div class="w3-quarter w3-orange container">
+        <div class="w3-center">
+          <%= link_to "new article", "/articles/new" %>
+        </div>
       </div>
-      <div class="w3-quarter w3-blue">
+      <div class="w3-quarter w3-blue container">
         <h1 class="w3-center ">Juegos</h1>
       </div>
     </div>
